@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home| Barefoot Nomad</title>
+    <style>
+        body {
+            margin: 0;
+            background: rgb(236, 236, 236);
+        }
+        
+        .text {
+            font-family: tahoma;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #4D96FF;
+            text-transform: bold;
+            font-size: 25px;
+        }
+        
+        span {
+            color: black;
+        }
+        
+        .notify {
+            height: 40px;
+            width: 40px;
+            margin-top: 5px;
+        }
+        
+        #girl {
+            border-radius: 80px;
+            height: 40px;
+            width: 40px;
+            margin-top: 5px;
+        }
+        
+        .foot {
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+        
+        nav {
+            display: flex;
+            height: 50px;
+            background: white;
+            justify-content: space-between;
+            padding: 0 78px;
+        }
+        
+        .city {
+            width: 100%;
+            margin-top: px;
+            object-fit: fill;
+        }
+        
+        .find {
+            display: flex;
+            height: 100px;
+            width: 1000px;
+            margin-left: 160px;
+            margin-top: -30px;
+            background: white;
+            position: relative;
+        }
+        
+        .images {
+            margin-top: 20px;
+            margin-left: 20px;
+            display: flex;
+        }
+        
+        .unlock {
+            margin-left: 10px;
+            height: 400px;
+            width: 300px;
+            background-color: white;
+            font-size: 20px;
+            text-transform: bold;
+        }
+        
+        ul,
+        li {
+            margin: 30px 0px;
+        }
+        
+        .recommended {
+            margin-left: 30px;
+            height: 450px;
+            width: 590px;
+            background: white;
+        }
+        
+        .popular {
+            margin-left: 30px;
+            height: 400px;
+            width: 300px;
+            background-color: white;
+        }
+        
+        input[type='text'] {
+            width: 750px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 40px;
+            border: 0px;
+            background: rgb(236, 236, 236);
+            font-size: 30px;
+            color: black;
+        }
+        
+        input[type='submit'] {
+            margin-left: 40px;
+            margin-top: 30px;
+            width: 130px;
+            height: 40px;
+            border: 0px;
+            border-collapse: collapse;
+            border-radius: 20px;
+            background: rgb(104, 151, 227);
+            color: white;
+        }
+        
+        .center {
+            width: 180pt;
+            height: 100pt;
+            object-fit: fill;
+        }
+        
+        .forimg {
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .popular .forimg {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin: 30px 0px;
+        }
+        
+        .popular .forimg div {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 34px;
+        }
+        
+        .inner {
+            margin-top: -45px;
+            color: white;
+            margin-left: 23px;
+            font-size: 15px;
+            text-transform: bold;
+        }
+        
+        .outer {
+            margin-top: -1px;
+            color: black;
+            margin-left: 23px;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 20px;
+        }
+        
+        .recommended h1 {
+            font-size: 30px;
+        }
+        
+        .text-center {
+            text-align: center;
+            font-style: large;
+            font-size: 20px;
+            padding: 0;
+        }
+        
+        .chat {
+            position: relative;
+            margin-top: 30vh;
+            margin-left: 9vh;
+            width: 300px;
+            height: 40px;
+            background: rgb(104, 151, 227);
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <p class="text">
+            <img src="./img/footsteps.png" alt="" class="foot" />Barefoot &nbsp;<span> Nomad</span>
+        </p>
+        <div>
+            <a href="#"><img src="./img/notification.png" alt="notify" class="notify" /></a>
+            <a href="#"><img src="./img/download.jpg" alt="" class="this" id="girl" /></a>
+        </div>
+
+    </nav>
+    <div>
+        <img src="./img/ll 1.png" alt="" class="city" />
+
+    </div>
+    <div class="find">
+        <input type="text" placeolder="Where do you want to go?"><a href="choose.html"><input type="submit" value="Find"></a>
+    </div>
+    <div class="images">
+        <div class="unlock">
+            <h1>Unlock your best Barefoot Nomad</h1>
+            <ul>
+                <li>get access to the best accomodations in the world</li>
+                <li>Get access to accomodation rating</li>
+                <li>Geyt access to make trip to any country in the world</li>
+                <input type="submit" value="Create your Trip">
+            </ul>
+        </div>
+        <div class="recommended">
+            <h1>Recommended for you</h1>
+
+            <div class="forimg">
+                <div> <img class="center" src="./img/unnamed (1) 1.png" alt="">
+                    <p class="text-center   outer"> Radison Blu</p>
+                </div>
+
+                <div> <img class="center" src="./img/Diani-Reef-Beach-Resort1 1.png" alt="">
+                    <p class="text-center outer"> Serena</p>
+                </div>
+            </div>
+            <div class="forimg">
+                <div> <img class="center" src="./img/Charley-Tree-House-Lion-Sands 1.png" alt="">
+                    <p class="text-center outer"> Tree House Hotel</p>
+                </div>
+                <div>
+                    <img class="center" src="./img/unnamed (2) 1.png" alt="">
+                    <p class="text-center outer"> Sun city</p>
+                </div>
+            </div>
+        </div>
+        <div class="popular">
+            <h1>Popular Destinations </h1>
+            <div class="forimg">
+                <div> <img class="center" src="./img/BisateLodge3 1.png" alt="">
+                    <p class=" inner">Rwanda</p>
+                </div>
+                <div>
+                    <img class="center" src="./img/top-things-to-do-in-cape-town-south-africa-table-mountain-1920x1014 1.png" alt="">
+                    <p class=" inner"> S.A</p>
+                </div>
+                <div class="chat">
+                    <p>CHAT</p>
+                </div>
+            </div>
+
+
+</body>
+
+</html>
+
+</html>
