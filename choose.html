@@ -5,326 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Choose destination</title>
-    <style>
-        body {
-            margin: 0;
-            background: rgb(236, 236, 236);
-        }
-        
-        .text {
-            font-family: tahoma;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #4D96FF;
-            text-transform: bold;
-            font-size: 25px;
-        }
-        
-        span {
-            color: black;
-        }
-        
-        .notify {
-            height: 40px;
-            width: 40px;
-            margin-top: 5px;
-        }
-        
-        #girl {
-            border-radius: 80px;
-            height: 40px;
-            width: 40px;
-            margin-top: 5px;
-        }
-        
-        .foot {
-            width: 40px;
-            height: 40px;
-            padding: 0;
-        }
-        
-        nav {
-            display: flex;
-            height: 50px;
-            background: white;
-            justify-content: space-between;
-            padding: 0 78px;
-        }
-        
-        .city {
-            width: 100%;
-            margin-top: px;
-            object-fit: fill;
-        }
-        
-        .contain {
-            display: flex;
-        }
-        
-        .find {
-            height: 200px;
-            width: 1000px;
-            margin-left: 160px;
-            margin-top: -30px;
-            background: white;
-            position: relative;
-        }
-        
-        .images {
-            margin-top: 20px;
-            margin-left: 20px;
-            display: flex;
-        }
-        
-        .unlock {
-            margin-left: 10px;
-            height: 400px;
-            width: 300px;
-            background-color: white;
-            font-size: 20px;
-            text-transform: bold;
-            padding: 0 15px;
-        }
-        
-        ul,
-        li {
-            margin: 30px 0px;
-        }
-        
-        .recommended {
-            margin-left: 30px;
-            height: 450px;
-            width: 590px;
-            background: white;
-        }
-        
-        .popular {
-            margin-left: 30px;
-            height: 400px;
-            width: 300px;
-            background-color: white;
-        }
-        
-        input[type='text'] {
-            width: 750px;
-            height: 40px;
-            margin-top: 30px;
-            margin-left: 40px;
-            border: 0px;
-            background: rgb(236, 236, 236);
-            font-size: 30px;
-            color: black;
-        }
-        
-        input[type='submit'] {
-            margin-left: 40px;
-            margin-top: 30px;
-            width: 130px;
-            height: 40px;
-            border: 0px;
-            border-collapse: collapse;
-            border-radius: 20px;
-            background: rgb(104, 151, 227);
-            color: white;
-        }
-        
-        .center {
-            width: 180pt;
-            height: 100pt;
-            object-fit: fill;
-        }
-        
-        .forimg {
-            display: flex;
-            justify-content: space-evenly;
-        }
-        
-        .popular .forimg {
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin: 30px 0px;
-        }
-        
-        .popular .forimg div {
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            margin-top: 34px;
-        }
-        
-        .inner {
-            margin-top: -45px;
-            color: white;
-            margin-left: 23px;
-            font-size: 20px;
-            text-transform: bold;
-        }
-        
-        .outer {
-            margin-top: -1px;
-            color: black;
-            margin-left: 23px;
-        }
-        
-        h1 {
-            text-align: center;
-            font-size: 20px;
-        }
-        
-        .recommended h1 {
-            font-size: 30px;
-        }
-        
-        .text-center {
-            text-align: center;
-            font-style: large;
-            font-size: 20px;
-            padding: 0;
-        }
-        
-        .travel {
-            margin-top: -200px;
-            margin-left: 390px;
-            color: white;
-            position: absolute;
-            font-size: 60px;
-            font-family: art valentine;
-        }
-        
-        .date {
-            display: inline-flex;
-        }
-        
-        .date input[type='text'] {
-            outline: none;
-            margin-left: 49px;
-            height: 30px;
-            background: rgb(236, 236, 236);
-            padding: 12px;
-        }
-        
-        .date input[type] {
-            height: 30px;
-            outline: none;
-            margin-left: 40px!important;
-            margin-top: 40px;
-            background: rgb(236, 236, 236)!important;
-            width: 258px;
-            border: 0px;
-            padding: 12px;
-        }
-        
-        .tex {
-            position: absolute;
-            display: flex;
-            margin-top: 40px;
-            font-size: 30px;
-            margin-left: 100px;
-        }
-        
-        .tex span {
-            margin-left: 170px;
-            margin-top: 10px;
-        }
-        
-        .unique {
-            display: block;
-            /* position: block; */
-        }
-        .locate{
-            height: 30px;
-            position: absolute;
-            margin-left: 115vh;
-            margin-top: 5.7vh;
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Home| Barefoot Nomad</title>
 
-        }
-    </style>
 </head>
 
 <body>
     <nav>
-        <p class="text">
-            <img src="./img/footsteps.png" alt="" class="foot" />Barefoot &nbsp;<span> Nomad</span>
+        <p>
+            <img src="./img/footsteps.png" alt="" />Barefoot<span> Nomad</span>
         </p>
         <div>
-            <a href="#"><img src="./img/notification.png" alt="notify" class="notify" /></a>
-            <a href="#"><img src="./img/download.jpg" alt="" class="this" id="girl" /></a>
+            <a href="#"><img src="./img/notification.png" alt="notify" /></a>
+            <a href="#"><img src="./img/download.jpg" alt="" /></a>
         </div>
 
     </nav>
-    <div>
-        <img src="./img/ll 1.png" alt="" class="city" />
-        <p class="travel">Travel the world</p>
+    <div class="home_banner choose">
+        <p>Travel the world.</p>
+        <img src="./img/ll 1.png" alt="" />
     </div>
-    <div class="contain">
-        <div class="find">
-            <img src="./img/current-location.svg" alt="" class="locate">           
+    <div class="light_grey">
 
-            <input type="text" placeholder="Rwanda-Kigali" style="padding:3px;"><input type="submit" value="Find "><br>
-            <div class="date">
-                <input type="date">
-                <input type="date" placeholder="">
-                <input type="text" placeholder="2 Guests" class="unique">
+    <div class="location_box">
+        <span>
+            <input type="text" placeholder="Rwanda - Kigali &map;">
+            <img src="./img/current-location.svg" alt="" width="20"><a href="#"><button type="submit">Find</button></a>
+        </span>
+
+            <div class="label_data">
+                <div class="label_group">
+                    <p>Departing On</p>
+                    <input type="date">
+                </div>
+                <div class="label_group">
+                    <p>Arriving On</p>
+                    <input type="date" placeholder="">
+                </div>
+                <div class="label_group">
+                    <p>Guests</p>
+                    <input type="text" placeholder="2 Guests">
+                </div>
             </div>
-             
+
+    </div>
+</div>
+
+    <div class="home_main_content">
+        <div class="left_content">
+            <h1>Unlock your best Barefoot Nomad</h1>
+            <ul>
+                <li>Get access to the best accomodations in the world</li>
+                <li>Get access to accomodation rating</li>
+                <li>Get access to make trip to any country in the world</li>
+                <button><a href="">Create your Trip</a></button>
+            </ul>
+        </div>
+
+        <div class="home_center_content">
+            <h1>Recommended for you</h1>
+            <div class="home_center_content_img">
+                <div>
+                    <img src="./img/unnamed (1) 1.png" alt="">
+                    <p> Radison Blu</p>
                 </div>
-                    <div class="tex">
-                        <span>Departing On</span>
-                        <span>Arriving On</span>
-                        <span>Guests</span>
-                    </div>
+
+                <div>
+                    <img src="./img/Diani-Reef-Beach-Resort1 1.png" alt="">
+                    <p> Serena</p>
                 </div>
-                <div class=" images ">
-                    <div class="unlock ">
-                        <h1>Unlock your best Barefoot Nomad</h1>
-                        <ul>
-                            <li>get access to the best accomodations in the world</li>
-                            <li>Get access to accomodation rating</li>
-                            <li>Geyt access to make trip to any country in the world</li>
-                            <a href="index.html "><input type="submit" value="Sign Up "></a>
-                        </ul>
-                    </div>
-                    <div class="recommended ">
-                        <h1>Recommended for you</h1>
+            </div>
+            <div class="home_center_content_img">
+                <div><img src="./img/Charley-Tree-House-Lion-Sands 1.png" alt="">
+                    <p> Tree House Hotel</p>
+                </div>
+                <div>
+                    <img src="./img/unnamed (2) 1.png" alt="">
+                    <p> Sun city</p>
+                </div>
+            </div>
+        </div>
 
-                        <div class="forimg ">
-                            <div> <img class="center " src="./img/unnamed (1) 1.png " alt=" ">
-                                <p class="text-center outer "> Radison Blu</p>
-                            </div>
+        <div class="home_popular">
+            <h1>Popular Destinations </h1>
+            <div class="home_popular_content">
+                <div class="home_popular_img">
+                    <img src="./img/BisateLodge3 1.png" alt="">
+                    <p>Rwanda</p>
+                </div>
 
-                            <div> <img class="center " src="./img/Diani-Reef-Beach-Resort1 1.png " alt=" ">
-                                <p class="text-center outer "> Serena</p>
-                            </div>
-                        </div>
-                        <div class="forimg ">
-                            <div> <img class="center " src="./img/Charley-Tree-House-Lion-Sands 1.png " alt=" ">
-                                <p class="text-center outer "> Tree House Hotel</p>
-                            </div>
-                            <div>
-                                <img class="center " src="./img/unnamed (2) 1.png " alt=" ">
-                                <p class="text-center outer "> Sun city</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="popular ">
-                        <h1>Popular Destinations </h1>
-                        <div class="forimg ">
-                            <div> <img class="center" src="./img/BisateLodge3 1.png " alt=" ">
-                                <p class="inner">Rwanda</p>
-                            </div>
-                            <div>
-                                <img class="center" src="./img/top-things-to-do-in-cape-town-south-africa-table-mountain-1920x1014 1.png " alt=" ">
-                                <p class="inner"> S.A</p>
-                            </div>
+                <div class="home_popular_img">
+                    <img src="./img/top-things-to-do-in-cape-town-south-africa-table-mountain-1920x1014 1.png" alt="">
+                    <p class=" inner"> S.A</p>
+                </div>
 
-                        </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="home_popular_chat">
+        <p>CHAT</p>
+    </div>
 
 
 </body>
-
-</html>
 
 </html>
